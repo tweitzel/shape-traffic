@@ -47,9 +47,9 @@ tc filter add dev $DEV parent 1:0 protocol ip prio 10 u32 \
 tc filter add dev $DEV parent 1:0 protocol ip prio 10 u32 \
       match ip src 172.17.2.2/32
 
-# Roku
+# XBMC
 tc filter add dev $DEV parent 1:0 protocol ip prio 10 u32 \
-      match ip src 172.17.2.105/32 
+      match ip src 172.17.2.104/32 
 
 # BD Player
 tc filter add dev $DEV parent 1:0 protocol ip prio 10 u32 \
